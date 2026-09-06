@@ -1,0 +1,264 @@
+/* --- General Page Reset (Aesthetic Contrast Light-Grey & Dark-Red Hybrid Theme) --- */
+.menu-container {
+  width: 100%;
+  background-color: #f4f6f9; /* Background is premium soft light grey slate to look fresh */
+  overflow-x: hidden;
+}
+
+/* Header Banner (Dark Velvet Contrast Top Sheet) */
+.menu-hero {
+  position: relative;
+  background: url('https://unsplash.com') no-repeat center center/cover;
+  padding: 9rem 5% 7rem 5%;
+  text-align: center;
+  min-height: 35vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(17, 17, 17, 0.8) 0%, #f4f6f9 100%);
+  z-index: 1;
+}
+
+.menu-hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.menu-tag {
+  color: #ff3838;
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.menu-hero-content h1 {
+  font-size: 3.2rem;
+  font-weight: 900;
+  color: #ffffff;
+  margin-top: 0.5rem;
+  text-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.menu-underline {
+  width: 50px;
+  height: 3.5px;
+  background: #ff3838;
+  margin: 0.8rem auto 0 auto;
+  border-radius: 10px;
+}
+
+/* --- THE FILTER CAPSULE TABS BAR STYLES --- */
+.filter-bar-section {
+  padding: 3rem 8% 1rem 8%;
+  display: flex;
+  justify-content: center;
+}
+
+.filter-buttons-wrapper {
+  display: flex;
+  gap: 1rem;
+  background: #ffffff; /* Floating white sleek docking tray */
+  padding: 0.5rem 0.8rem;
+  border-radius: 50px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(0, 0, 0, 0.02);
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.filter-tab-btn {
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 0.6rem 1.6rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #718096;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.filter-tab-btn:hover {
+  color: #1a1a1a;
+}
+
+/* Active tag shifts to high energy brand crimson red fluid pill shape */
+.active-filter {
+  background: linear-gradient(135deg, #ff3838 0%, #d63031 100%);
+  color: #ffffff !important;
+  box-shadow: 0 4px 12px rgba(255, 56, 56, 0.3);
+}
+
+/* --- FOOD ITEMS ARCHITECTURE SECTIONS GRID --- */
+.menu-grid-section {
+  padding: 2rem 8% 8rem 8%;
+}
+
+.menu-items-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem;
+  justify-content: center;
+}
+
+/* Elite Light Dashboard Food Card Units */
+.menu-food-card {
+  background: #ffffff; /* Crisp white card box standing out cleanly */
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.01);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+  display: flex;
+  flex-direction: column;
+  transition: all 0.35s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+/* Picture Canvas Inner Frame */
+
+/* Picture Canvas Inner Frame Setup */
+/* Picture Canvas Inner Frame Setup (Lambi botlon ko lock karne ke liye) */
+.menu-card-img-box {
+  width: 100%;
+  height: 220px; /* Rigid default height settings lock checking matrix */
+  position: relative;
+  overflow: hidden; /* Yeh card se bahar nikalti hui images ko zabardasti andar crop karega */
+  background-color: #1a1a1a; /* Placeholder dark solid area till image scales */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* --- THE ABSOLUTE UNIFORM MESH IMAGES FIX --- */
+.menu-product-img {
+  width: 100% !important;
+  height: 100% !important; /* Forces 100% boundary height scaling structure */
+  object-fit: cover; /* Is se image bina pichke ya ajeeb stretch huye perfectly crop hogi */
+  object-position: center; /* Product bilkul center frames pixel standard par lock rahega */
+  display: block;
+  transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* Image dynamic scaling visual trigger on card mouse hover */
+.menu-food-card:hover .menu-product-img {
+  transform: scale(1.06);
+}
+
+.menu-card-rating {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: rgba(26, 26, 26, 0.85);
+  backdrop-filter: blur(4px);
+  color: #ffffff;
+  padding: 0.3rem 0.7rem;
+  border-radius: 20px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  z-index: 3;
+}
+
+.menu-card-category-tag {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: #ff3838;
+  color: #ffffff;
+  padding: 0.3rem 0.8rem;
+  border-radius: 6px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  z-index: 3;
+}
+
+/* Content & Typography Details inside Cards */
+.menu-card-info {
+  padding: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.menu-card-info h3 {
+  font-size: 1.3rem;
+  color: #1a1a1a;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+.menu-product-desc {
+  color: #718096;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 1.8rem;
+}
+
+.menu-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #edf2f7;
+  padding-top: 1.2rem;
+}
+
+.menu-card-price {
+  font-size: 1.3rem;
+  font-weight: 900;
+  color: #1a1a1a;
+  letter-spacing: -0.5px;
+}
+
+/* Sleek Minimal Add to Cart Action Buttons */
+.menu-add-cart-btn {
+  background: transparent;
+  color: #ff3838;
+  border: 1.5px solid rgba(255, 56, 56, 0.2);
+  outline: none;
+  font-weight: 700;
+  font-size: 0.88rem;
+  padding: 0.55rem 1.3rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.menu-add-cart-btn:hover {
+  background: #ff3838;
+  color: #ffffff;
+  border-color: #ff3838;
+  box-shadow: 0 4px 12px rgba(255, 56, 56, 0.25);
+  transform: translateY(-1px);
+}
+
+/* --- CARD HOVER INTERACTION TRIGGER ELEVATIONS --- */
+.menu-food-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
+  border-color: rgba(255, 56, 56, 0.15);
+}
+
+/* --- Multi Breakpoint Tablet & Smartphone Adaptive Settings --- */
+@media (max-width: 992px) {
+  .menu-hero h1 { font-size: 2.4rem; }
+  .menu-items-grid { gap: 2rem; }
+  .filter-bar-section { padding: 2.5rem 5% 0.5rem 5%; }
+  .menu-grid-section { padding: 2rem 5% 6rem 5%; }
+}
+
+@media (max-width: 480px) {
+  .filter-buttons-wrapper { gap: 0.5rem; padding: 0.4rem; border-radius: 20px; }
+  .filter-tab-btn { padding: 0.5rem 1.1rem; font-size: 0.88rem; }
+  .menu-card-info { padding: 1.4rem; }
+}

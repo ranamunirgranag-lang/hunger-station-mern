@@ -1,0 +1,275 @@
+/* --- General Page Reset (Balanced Soft Slate Light Background) --- */
+.contact-container {
+  width: 100%;
+  background-color: #f4f6f9; /* Pure white mita kar soft modern light-grey slate set kiya */
+  overflow-x: hidden;
+}
+
+/* --- Section 1: Hero Banner (Elegant Contrast Screen) --- */
+.contact-hero {
+  position: relative;
+  background: url('https://unsplash.com') no-repeat center center/cover;
+  padding: 9rem 5% 7rem 5%;
+  text-align: center;
+  min-height: 35vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Soft moody dark-to-light gradient blend framework */
+  background: linear-gradient(to bottom, rgba(17, 17, 17, 0.8) 0%, #f4f6f9 100%);
+  z-index: 1;
+}
+
+.contact-hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.contact-tag {
+  color: #ff3838;
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.contact-hero-content h1 {
+  font-size: 3.2rem;
+  font-weight: 900;
+  color: #ffffff; /* Heading text white rakha taake top dark overlay par chamke */
+  margin-top: 0.5rem;
+  text-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.contact-underline {
+  width: 50px;
+  height: 3.5px;
+  background: #ff3838;
+  margin: 0.8rem auto 0 auto;
+  border-radius: 10px;
+}
+
+/* --- Section 2: Balanced Spacing Columns Grid --- */
+.contact-split-section {
+  display: flex;
+  width: 100%;
+  min-height: 75vh;
+  padding: 6rem 8%;
+  align-items: flex-start;
+  gap: 5rem;
+  background: radial-gradient(circle at 10% 20%, rgba(255, 56, 56, 0.04) 0%, transparent 40%);
+}
+
+.contact-info-panel {
+  flex: 1;
+}
+
+.panel-tag {
+  color: #ff3838;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.contact-info-panel h2 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #1a1a1a; /* Corporate Charcoal Black for premium high-end contrast */
+  line-height: 1.25;
+  margin: 0.6rem 0 1.5rem 0;
+  letter-spacing: -0.5px;
+}
+
+.panel-desc {
+  color: #555555; /* Soft readable corporate grey text link descriptors */
+  font-size: 1.05rem;
+  line-height: 1.75;
+  margin-bottom: 2.5rem;
+}
+
+/* Info Stacking Rows Layout */
+.matrix-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.matrix-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.3rem;
+}
+
+/* Premium Light-Glow Circle Icons */
+.matrix-icon {
+  font-size: 1.3rem;
+  background: #ffffff;
+  min-width: 50px;
+  height: 50px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(0, 0, 0, 0.02);
+}
+
+.matrix-item h5 {
+  font-size: 1.1rem;
+  color: #1a1a1a;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.matrix-item p {
+  color: #666666;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* --- Right Side: High-End High-Contrast White Feedback Card Box --- */
+.contact-form-panel {
+  flex: 1;
+  width: 100%;
+}
+
+.premium-contact-form {
+  background: #ffffff; /* Crisp white card blocks that pops cleanly on soft grey background template */
+  border-radius: 24px;
+  padding: 3.5rem 3rem;
+  border: 1px solid rgba(0, 0, 0, 0.02);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.06); /* Sophisticated corporate shadow parameters */
+}
+
+.form-group {
+  margin-bottom: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  color: #2d3748;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.form-group input, 
+.form-group textarea {
+  background: #f8fafc;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 0.9rem 1.1rem;
+  color: #1a1a1a;
+  font-size: 0.95rem;
+  outline: none;
+  transition: all 0.25s ease;
+}
+
+/* Smooth input active shifting glow states */
+.form-group input:focus, 
+.form-group textarea:focus {
+  border-color: #ff3838;
+  background: #ffffff;
+  box-shadow: 0 0 12px rgba(255, 56, 56, 0.12);
+}
+
+/* Energetic Crimson Red Action Submit Button */
+.form-submit-btn {
+  background: linear-gradient(135deg, #ff3838 0%, #d63031 100%);
+  color: #ffffff;
+  border: none;
+  outline: none;
+  font-weight: 700;
+  font-size: 0.95rem;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  box-shadow: 0 4px 15px rgba(255, 56, 56, 0.25);
+  transition: all 0.25s ease;
+}
+
+.form-submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 22px rgba(255, 56, 56, 0.45);
+}
+
+/* --- Section 3: Divisional Utility Grid Cards --- */
+.utility-portals-section {
+  padding: 0 8% 8rem 8%;
+  background-color: #f4f6f9;
+}
+
+.portals-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 3rem;
+}
+
+/* Neumorphic Style Light Content Boxes */
+.portal-box {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.01);
+  padding: 3rem 2.2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.portal-box h4 {
+  font-size: 1.3rem;
+  color: #1a1a1a;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+
+.portal-box p {
+  color: #666666;
+  font-size: 0.95rem;
+  line-height: 1.65;
+  margin-bottom: 1.5rem;
+}
+
+.portal-link {
+  color: #ff3838;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+
+/* Center Highlighted portal box boundary tracks */
+.highlighted-portal {
+  background: #ffffff;
+  border-color: rgba(255, 188, 0, 0.3); /* Bareek unique gold tracking line */
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+}
+
+.portal-box:hover {
+  transform: translateY(-6px);
+  border-color: #ff3838;
+  box-shadow: 0 18px 40px rgba(255, 56, 56, 0.12);
+}
+
+/* --- Responsive Tablet / Mobile Adjustments Framework --- */
+@media (max-width: 992px) {
+  .contact-split-section {
+    flex-direction: column;
+    gap: 4rem;
+    padding: 4rem 5%;
+  }
+  .contact-hero h1 { font-size: 2.4rem; }
+  .contact-info-panel h2 { font-size: 2rem; }
+  .premium-contact-form { padding: 2.5rem 1.8rem; }
+  .utility-portals-section { padding: 0 5% 6rem 5%; }
+}

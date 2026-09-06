@@ -1,0 +1,379 @@
+/* --- User Dashboard Layout (Premium Hybrid Contrast Theme) --- */
+.user-dashboard-container {
+  width: 100%;
+  min-height: 90vh;
+  /* Pure bright white mita kar industry standard background template dhal di */
+  background-color: #121212; 
+  background: radial-gradient(circle at 10% 20%, #1a1a1a 0%, #111111 90%);
+  padding: 6rem 8% 8rem 8%;
+  position: relative;
+}
+
+.dashboard-layout-grid {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 3rem;
+  align-items: flex-start;
+}
+
+/* --- LEFT COLUMN: SOLID LUXURY DARK CARD PANEL (Exactly matching snapshot structure) --- */
+.profile-metadata-card-box {
+  flex: 1;
+  background: #1a1a1a; /* Solid pure charcoal black layout body */
+  border-radius: 24px;
+  padding: 3.5rem 2.2rem;
+  /* Thin brand line outline accent indicator border tracking */
+  border: 1.5px solid rgba(255, 56, 56, 0.15); 
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5), 0 0 30px rgba(255, 56, 56, 0.03);
+  text-align: center;
+  transition: border-color 0.3s ease;
+}
+
+.profile-metadata-card-box:hover {
+  border-color: rgba(255, 56, 56, 0.35); /* Subtle ambient glow shift on hover */
+}
+
+/* Profile Avatar Custom Graphics */
+.avatar-initials-badge {
+  width: 90px;
+  height: 90px;
+  background: linear-gradient(135deg, #ff3838 0%, #d63031 100%);
+  color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: 900;
+  margin: 0 auto 1.5rem auto;
+  box-shadow: 0 8px 25px rgba(255, 56, 56, 0.4);
+  border: 2px solid #ffffff;
+}
+
+.profile-static-details-view h2 {
+  font-size: 1.8rem;
+  color: #ffffff; /* High contrast text strings */
+  font-weight: 800;
+  margin-bottom: 0.3rem;
+}
+
+.user-tier-badge {
+  display: inline-block;
+  background: rgba(255, 188, 0, 0.1);
+  color: #ffbc00; /* Keeps the premium gold text identifier badge look */
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 0.3rem 1rem;
+  border-radius: 30px;
+  border: 1px solid rgba(255, 188, 0, 0.25);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.card-divider-line-sub {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.08);
+  margin: 1.8rem 0;
+}
+
+/* Stacking Info Labels */
+.meta-data-field-item {
+  text-align: left;
+  margin-bottom: 1.4rem;
+}
+
+.meta-data-field-item span {
+  font-size: 0.82rem;
+  color: #888888;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+.meta-data-field-item strong {
+  font-size: 1.05rem;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.meta-data-field-item p {
+  font-size: 1rem;
+  color: #e2e8f0;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Interactive Control Tray Buttons */
+.profile-actions-buttons-tray {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2.5rem;
+}
+
+.btn-edit-settings {
+  background: linear-gradient(135deg, #ff3838 0%, #d63031 100%);
+  color: #ffffff;
+  border: none;
+  font-weight: 700;
+  padding: 0.9rem;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  font-size: 0.95rem;
+  box-shadow: 0 4px 15px rgba(255, 56, 56, 0.2);
+}
+
+.btn-edit-settings:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(255, 56, 56, 0.35);
+}
+
+.btn-secure-logout {
+  background: transparent;
+  color: rgba(255, 255, 255, 0.5);
+  border: 1.5px solid rgba(255, 255, 255, 0.1);
+  font-weight: 600;
+  padding: 0.8rem;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 0.95rem;
+}
+
+.btn-secure-logout:hover {
+  color: #ff3838;
+  border-color: #ff3838;
+  background: rgba(255, 56, 56, 0.02);
+}
+
+/* --- RIGHT COLUMN: FRESH LIGHT RADAR PANEL (Contrast Balance Area) --- */
+.profile-orders-radar-panel-box {
+  flex: 1.8;
+  background: #ffffff; /* Smooth high-contrast clean white surface box */
+  border-radius: 24px;
+  padding: 3rem;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(0, 0, 0, 0.02);
+}
+
+.profile-orders-radar-panel-box h2 {
+  font-size: 1.7rem;
+  font-weight: 800;
+  color: #1a1a1a; /* Clean charcoal black text color */
+  letter-spacing: -0.5px;
+}
+
+.user-orders-stack-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.user-order-tracking-card {
+  background: #f8fafc;
+  border-radius: 18px;
+  padding: 1.8rem;
+  border: 1px solid #edf2f7;
+}
+
+.user-order-card-meta-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.order-id-track-pill {
+  background: #1a1a1a;
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 0.85rem;
+  padding: 0.4rem 0.9rem;
+  border-radius: 8px;
+}
+
+.status-badge-indicator-client {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0.4rem 0.9rem;
+  border-radius: 30px;
+}
+
+.status-badge-indicator-client.pending { background-color: rgba(255, 188, 0, 0.1); color: #b7791f; }
+.status-badge-indicator-client.dispatched-🚀 { background-color: rgba(46, 204, 113, 0.1); color: #2ecc71; }
+.status-badge-indicator-client.in-progress { background-color: rgba(56, 189, 248, 0.1); color: #0284c7; }
+
+/* Sub rows item list inside card manifests */
+.user-order-items-manifest-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.client-manifest-row {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  background: #ffffff;
+  padding: 0.8rem 1.2rem;
+  border-radius: 12px;
+  border: 1px solid #edf2f7;
+}
+
+.client-manifest-thumbnail-box {
+  width: 52px;
+  height: 48px;
+  object-fit: cover;
+  border-radius: 8px;
+  background-color: #e2e8f0;
+}
+
+.client-manifest-row h6 {
+  font-size: 1rem;
+  color: #1a1a1a;
+  font-weight: 700;
+  margin: 0;
+}
+
+.client-manifest-row span {
+  font-size: 0.85rem;
+  color: #718096;
+}
+
+.client-manifest-price {
+  margin-left: auto;
+  font-weight: 800;
+  color: #1a1a1a;
+  font-size: 1rem;
+}
+
+.client-order-invoice-strip {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #4a5568;
+  margin-bottom: 1.5rem;
+  padding: 0 0.5rem;
+}
+
+.client-order-invoice-strip strong {
+  font-size: 1.2rem;
+  color: #ff3838;
+  font-weight: 800;
+}
+
+/* Live response feedback from HQ managers channels */
+.admin-response-feedback-live-box {
+  background-color: rgba(46, 204, 113, 0.06);
+  border: 1px dashed rgba(46, 204, 113, 0.3);
+  padding: 1.2rem;
+  border-radius: 12px;
+}
+
+.admin-response-feedback-live-box label {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #27ae60;
+  display: block;
+  margin-bottom: 0.3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.admin-response-string-text {
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: 600;
+  color: #1e293b;
+  margin: 0;
+}
+
+/* Fallback Screens for empty arrays trackers */
+.empty-user-orders-fallback {
+  text-align: center;
+  padding: 5rem 2rem;
+  background: #f8fafc;
+  border-radius: 16px;
+  border: 1px dashed #cbd5e1;
+}
+
+.empty-user-orders-fallback span { font-size: 3.5rem; display: block; margin-bottom: 1.2rem; }
+.empty-user-orders-fallback h4 { font-size: 1.3rem; color: #1a1a1a; margin-bottom: 0.5rem; font-weight: 700; }
+.empty-user-orders-fallback p { color: #718096; font-size: 0.95rem; line-height: 1.6; max-width: 440px; margin: 0 auto; }
+
+/* Dynamic Editable Inputs Configuration Box Forms */
+.profile-edit-settings-form h3 {
+  font-size: 1.4rem;
+  color: #ffffff;
+  font-weight: 800;
+}
+
+.dash-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  text-align: left;
+  margin-bottom: 1.2rem;
+}
+
+.dash-form-group label {
+  color: #a0aec0;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.dash-form-group input {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1.5px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  padding: 0.8rem 1rem;
+  color: #ffffff;
+  font-size: 0.95rem;
+  outline: none;
+  transition: all 0.25s ease;
+}
+
+.dash-form-group input:focus {
+  border-color: #ff3838;
+  box-shadow: 0 0 10px rgba(255, 56, 56, 0.15);
+}
+
+.form-settings-action-trays {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.btn-save-settings {
+  background: linear-gradient(135deg, #ff3838 0%, #d63031 100%);
+  color: #ffffff; border: none; font-weight: 700; flex: 2; padding: 0.85rem; border-radius: 10px; cursor: pointer;
+}
+.btn-cancel-settings {
+  background: rgba(255, 255, 255, 0.05);
+  color: #ffffff; border: none; font-weight: 600; flex: 1; padding: 0.85rem; border-radius: 10px; cursor: pointer;
+}
+
+/* Guard auth screen parameters styles */
+.dashboard-guard-fallback {
+  text-align: center; padding: 8rem 5%; background-color: #111111; min-height: 80vh; color: #ffffff; display: flex; flex-direction: column; align-items: center; justify-content: center;
+}
+.dashboard-guard-fallback h3 { font-size: 1.8rem; margin-bottom: 0.5rem; color: #ff3838; }
+.dashboard-guard-fallback p { color: #aaaaaa; margin-bottom: 2rem; }
+.dashboard-guard-fallback button {
+  background: #ff3838; color: #ffffff; border: none; font-weight: 700; padding: 0.8rem 2.2rem; border-radius: 8px; cursor: pointer;
+}
+
+/* --- Multi Breakpoint Tablet Responsive Adjustments --- */
+@media (max-width: 992px) {
+  .dashboard-layout-grid { flex-direction: column; gap: 3rem; }
+  .user-dashboard-container { padding: 4rem 5% 6rem 5%; }
+  .profile-orders-radar-panel-box { width: 100%; padding: 2.2rem 1.6rem; }
+  .profile-metadata-card-box { width: 100%; }
+}

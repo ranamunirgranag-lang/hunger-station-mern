@@ -1,0 +1,199 @@
+/* --- Footer Main Box (Velvet Mesh Layer Shift) --- */
+.footer {
+  /* Simple black blocks ko contrast dark smoke red gradient background me override kiya */
+  background: radial-gradient(circle at 50% 0%, rgba(214, 48, 49, 0.05) 0%, #111111 80%);
+  color: #ffffff;
+  padding: 6rem 6% 2rem 6%;
+  border-top: 1px solid rgba(255, 255, 255, 0.03);
+  position: relative;
+  overflow: hidden;
+  margin-top: -1px;
+}
+
+/* 5 Column Grid system */
+.footer-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1.3fr 1.3fr 1.8fr;
+  gap: 3.5rem;
+  margin-bottom: 5rem;
+  position: relative;
+  z-index: 2;
+}
+
+.footer-brand h3 {
+  font-size: 1.8rem;
+  font-weight: 900;
+  margin-bottom: 1.2rem;
+  text-transform: uppercase;
+}
+
+.footer-brand h3 span {
+  color: #ff3838;
+}
+
+.brand-pitch {
+  color: #a5a5a5;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.social-tag {
+  background: rgba(255, 255, 255, 0.03);
+  color: #a5a5a5;
+  text-decoration: none;
+  font-size: 0.82rem;
+  font-weight: 700;
+  width: 38px;
+  height: 38px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
+}
+
+.social-tag:hover {
+  background: #ff3838;
+  color: #ffffff;
+  box-shadow: 0 0 15px rgba(255, 56, 56, 0.4);
+}
+
+.footer h4 {
+  font-size: 1.15rem;
+  color: #ffffff;
+  margin-bottom: 1.6rem;
+  font-weight: 700;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 0.9rem;
+}
+
+.footer-links a {
+  color: #a5a5a5;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: all 0.25s ease;
+}
+
+.footer-links a:hover {
+  color: #ff3838;
+  padding-left: 6px;
+}
+
+.time-block {
+  margin-bottom: 1.2rem;
+}
+
+.time-block h5 {
+  font-size: 0.9rem;
+  color: #dddddd;
+}
+
+.operational-badge {
+  display: inline-block;
+  background-color: rgba(46, 204, 113, 0.1);
+  color: #2ecc71;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 0.3rem 0.8rem;
+  border-radius: 30px;
+  border: 1px solid rgba(46, 204, 113, 0.2);
+}
+
+/* --- Sleek & Minimal Subscribe Join Button --- */
+.subscribe-btn {
+  background: #ff3838;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  font-weight: 600; /* Super heavy se soft medium bold kiya */
+  font-size: 0.85rem;
+  padding: 0.4rem 1.2rem; /* Vertical padding kam ki taake patla ho jaye */
+  border-radius: 6px;
+  cursor: pointer;
+  width: auto; /* Fixed 30% width mita kar automatic auto fix kar diya */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.25s ease;
+}
+
+/* Hover par button smoothly dark red tone me shift hoga */
+.subscribe-btn:hover {
+  background: #d63031;
+  box-shadow: 0 2px 8px rgba(255, 56, 56, 0.3); /* Soft subtle glow */
+}
+
+/* Input field aur button ke darmiyan spacing ko behtar karne ke liye wrapper grid modifier */
+.subscribe-form {
+  display: flex;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 8px;
+  padding: 0.25rem;
+  width: 100%;
+  max-width: 280px;
+  justify-content: space-between; /* Input aur patlay button ko auto gap dene ke liye */
+  align-items: center;
+}
+
+.subscribe-input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  padding: 0.4rem 0.6rem;
+  font-size: 0.88rem;
+  width: 65%; /* Input ko zyada space di taake button patla rahe */
+}
+
+
+.footer-bottom {
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+.bottom-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-bottom p {
+  color: #666666;
+  font-size: 0.85rem;
+}
+
+.legal-links {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.legal-links a {
+  color: #666666;
+  text-decoration: none;
+  font-size: 0.85rem;
+}
+
+/* Responsive grids overrides */
+@media (max-width: 1200px) {
+  .footer-container { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 768px) {
+  .footer-container { grid-template-columns: 1fr; gap: 2.5rem; }
+  .bottom-wrap { flex-direction: column; text-align: center; gap: 1rem; }
+}

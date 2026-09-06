@@ -1,0 +1,260 @@
+/* --- General Page Reset Framework (Breathes between Header & Footer) --- */
+.auth-container {
+  width: 100%;
+  min-height: 85vh; /* Standard gap height allocations */
+  background-color: #141414; /* Luxury deep baseline charcoal tone */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 8%;
+  
+  /* --- THE CRITICAL FIX: Fixed aur absolute positions ko jadd se khatam kiya --- */
+  position: relative; 
+  top: auto;
+  left: auto;
+  z-index: 1;
+}
+
+/* Premium Balanced Split Grid Chassis */
+.auth-split-wrapper {
+  display: flex;
+  width: 100%;
+  max-width: 1050px;
+  min-height: 70vh;
+  background: #1e1e1e;
+  border-radius: 24px; /* Soft smooth corporate corners */
+  overflow: hidden;
+  box-shadow: 0 25px 55px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+/* --- Left Column: Dark Gourmet Visual Panel --- */
+.auth-visual-panel {
+  flex: 1;
+  position: relative;
+  background: url('/contact.jpg') no-repeat center center/cover;
+  padding: 4rem 5%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.visual-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(17, 17, 17, 0.65) 0%, rgba(255, 56, 56, 0.4) 100%);
+  z-index: 1;
+}
+
+.visual-content {
+  position: relative;
+  z-index: 2;
+  color: #ffffff;
+}
+
+.visual-tag {
+  color: #ffbc00;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: block;
+  margin-bottom: 0.6rem;
+}
+
+.visual-content h2 {
+  font-size: 2.2rem;
+  font-weight: 900;
+  line-height: 1.25;
+  margin-bottom: 1rem;
+}
+
+.visual-content p {
+  color: #eeeeee;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* --- Right Column: Crisp White Input Panel Card --- */
+.auth-form-panel {
+  flex: 1.2;
+  background-color: #ffffff; /* High contrast bright form view panels */
+  padding: 3.5rem 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth-card-box {
+  width: 100%;
+  max-width: 440px;
+}
+
+/* Sliding Headers Toggle System */
+.auth-toggle-headers {
+  display: flex;
+  border-bottom: 2px solid #edf2f7;
+  gap: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.toggle-tab-btn {
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #a0aec0;
+  padding-bottom: 0.8rem;
+  cursor: pointer;
+  position: relative;
+  transition: color 0.25s ease;
+}
+
+.toggle-tab-btn:hover {
+  color: #4a5568;
+}
+
+.active-tab {
+  color: #1a1a1a;
+}
+
+.active-tab::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2.5px;
+  background-color: #ff3838;
+  border-radius: 5px;
+}
+
+/* Core Form Inputs System Layout */
+.auth-core-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.auth-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.auth-group label {
+  color: #4a5568;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.auth-group input {
+  background: #f7fafc;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
+  color: #1a1a1a;
+  font-size: 0.95rem;
+  outline: none;
+  transition: all 0.25s ease;
+}
+
+.auth-group input:focus {
+  border-color: #ff3838;
+  background: #ffffff;
+  box-shadow: 0 0 12px rgba(255, 56, 56, 0.12);
+}
+
+/* Energetic Action Submission Button */
+.auth-action-btn {
+  background: linear-gradient(135deg, #ff3838 0%, #d63031 100%);
+  color: #ffffff;
+  border: none;
+  outline: none;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 0.9rem;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  box-shadow: 0 4px 15px rgba(255, 56, 56, 0.25);
+  transition: all 0.25s ease;
+}
+
+.auth-action-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 22px rgba(255, 56, 56, 0.45);
+}
+
+/* Inward kinetic slide animation on form profile expansion */
+.input-pop {
+  animation: smoothFieldReveal 0.4s ease forwards;
+}
+
+@keyframes smoothFieldReveal {
+  0% { opacity: 0; transform: translateY(-10px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* --- 100% MOBILE & TABLET RESPONSIVE BREAKPOINTS --- */
+@media (max-width: 992px) {
+  .auth-split-wrapper {
+    flex-direction: column; /* Tablet/Mobile screen par left image upar aur form niche ho jayega safely */
+    max-width: 580px;
+  }
+  .auth-visual-panel {
+    min-height: 240px;
+    padding: 3rem 5%;
+  }
+  .auth-form-panel {
+    padding: 3rem 2.5rem;
+  }
+  .auth-container {
+    padding: 3rem 4%;
+  }
+}
+
+@media (max-width: 480px) {
+  .auth-toggle-headers {
+    gap: 1.5rem;
+  }
+  .toggle-tab-btn {
+    font-size: 1.1rem;
+  }
+  .auth-form-panel {
+    padding: 2.5rem 1.5rem;
+  }
+}
+/* --- Eye Visibility Toggle Inline Forms Fields Wrappers --- */
+.password-input-wrapper-mesh {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.password-input-wrapper-mesh input {
+  width: 100%;
+  padding-right: 3rem !important; /* Spacing allocated so input strings text don't clash on vector icon */
+}
+
+.password-toggle-eye-action-btn {
+  position: absolute;
+  right: 12px;
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.2rem;
+  transition: transform 0.2s ease;
+}
+
+.password-toggle-eye-action-btn:hover {
+  transform: scale(1.08); /* Minimal bounce lift on eye icon hover */
+}

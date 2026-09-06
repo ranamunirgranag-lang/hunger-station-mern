@@ -1,0 +1,368 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 5%;
+  background: rgba(26, 26, 26, 0.95);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  width: 100%; /* Pure screen par phelaane ke liye */
+}
+
+.navbar-logo a {
+  font-size: 1.7rem;
+  font-weight: 800;
+  color: #ffffff;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.navbar-logo span {
+  color: #ff3838;
+  margin-left: 6px;
+}
+
+.navbar-links {
+  display: flex;
+  list-style: none;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.navbar-links a {
+  color: #b3b3b3;
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: #ff3838;
+}
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 2rem; /* Contact aur Sign In ke darmiyan gap generate karne ke liye */
+}
+
+.login-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.login-link:hover {
+  color: #ff3838;
+}
+
+.cart-btn {
+  background: linear-gradient(135deg, #ff3838 0%, #d63031 100%);
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.6rem 1.4rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: transform 0.2s ease;
+}
+
+.cart-btn:hover {
+  transform: translateY(-2px);
+}
+
+.cart-badge {
+  background-color: #ffffff;
+  color: #ff3838;
+  font-size: 0.8rem;
+  font-weight: 800;
+  padding: 0.1rem 0.4rem;
+  border-radius: 50%;
+}
+
+/* --- Mobile Responsiveness --- */
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none; /* Mobile hamburger menu hum baad me responsive logic me handle karenge */
+  }
+  .navbar {
+    padding: 1rem 4%;
+  }
+}
+/* --- Desktop General View --- */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 6%;
+  background: #1a1a1a;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  width: 100vw; /* Page ko full width phelane k liye */
+}
+
+.navbar-logo a {
+  font-size: 1.7rem;
+  font-weight: 800;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.navbar-logo span {
+  color: #ff3838;
+  margin-left: 5px;
+}
+
+.navbar-links {
+  display: flex;
+  list-style: none;
+  gap: 2.5rem;
+}
+
+.navbar-links a {
+  color: #b3b3b3;
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: #ff3838;
+}
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.login-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.login-link:hover {
+  color: #ff3838;
+}
+
+/* --- Modern & Minimal Cart Button --- */
+.cart-btn {
+  background: transparent;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.5rem 1.1rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border: 1.5px solid rgba(255, 255, 255, 0.2); /* Light elegant border */
+  border-radius: 8px; /* Clean rectangular-rounded corners */
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.25s ease;
+}
+
+/* Hover par subtle backdrop aur color shift background change */
+.cart-btn:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+  border-color: #ff3838; /* Red border transition */
+  color: #ff3838;
+}
+
+.cart-icon {
+  font-size: 1rem;
+}
+
+.cart-text {
+  font-size: 0.95rem;
+}
+
+/* Dynamic Minimal Notification Badge */
+.cart-badge {
+  background-color: #ff3838; /* Red badge instead of solid white */
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 4px;
+  border-radius: 4px; /* Small rounded badge matching button */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 2px;
+}
+
+/* Mobile adjustments to keep the clean border look */
+@media (max-width: 768px) {
+  .cart-btn {
+    padding: 0.45rem 0.9rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Hide Hamburger lines icon on desktop */
+.hamburger-menu {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger-menu .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+/* --- Mobile Breakpoint Optimization (Screens under 768px Width) --- */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  /* Hamburger lines menu ko right side push kiya aur spacing set ki */
+  .hamburger-menu {
+    display: flex; /* Mobile par bars dikhein */
+    order: 3; /* Is se ye cart button ke baad extreme right par dikhega */
+    margin-left: 1rem; /* Choohon ki tarah chipakna khatam karne ke liye safe doori */
+  }
+
+  /* Right action buttons container alignment rules */
+  .navbar-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-left: auto; /* Buttons ko logo se right side smoothly push karne ke liye */
+    order: 2; /* Is se ye center list ke baad render hoga */
+    position: relative;
+  }
+
+  /* --- SLEEK MOBILE CART BUTTON REFACTOR --- */
+  .cart-btn {
+    padding: 0.5rem 0.6rem; /* Extra padding kam karke chota slick kiya */
+    font-size: 0.9rem;
+    border-radius: 8px; /* Standard rect-rounded framing link text specs */
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  /* Mobile mobile display screens par visual string text 'Cart' ko hide kar diya */
+  .cart-text {
+    display: none !important;
+  }
+
+  .cart-icon {
+    font-size: 1.1rem; /* Icon rendering size balanced */
+    margin: 0;
+  }
+
+  /* Micro notification badge alignments inside small bubble link */
+  .cart-badge {
+    font-size: 0.7rem;
+    min-width: 16px;
+    height: 16px;
+    padding: 0 3px;
+    margin-left: 1px;
+  }
+
+  /* Desktop direct action links mobile view par chupanay k liye */
+  .navbar-actions .login-link {
+    display: none;
+  }
+
+  /* Mobile Dropdown Styling Block */
+  .navbar-links {
+    position: absolute;
+    right: 0px;
+    top: 100%;
+    background-color: #1a1a1a;
+    height: auto;
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+    gap: 1.8rem;
+    border-bottom: 2px solid #ff3838;
+    transform: translateY(-150%); /* Menu default state me upar chupa rahega */
+    transition: transform 0.4s ease-in-out;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    z-index: 999;
+  }
+
+  /* Active State jab menu open ho */
+  .navbar-links.nav-active {
+    transform: translateY(0%);
+  }
+
+  .mobile-only-link {
+    display: block; /* Mobile list dropdown me display hoga */
+  }
+
+  /* Hamburger Bars transform to cross icon (X) when menu state is active */
+  .hamburger-menu.open .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  .hamburger-menu.open .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger-menu.open .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+}
+/* --- Dynamic Navbar Profile Avatar Bubble (Sleek Rounded DP) --- */
+.navbar-profile-avatar-bubble {
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, #ff3838 0%, #d63031 100%);
+  color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 0.88rem;
+  letter-spacing: 0.3px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(255, 56, 56, 0.25);
+  border: 1.5px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  user-select: none;
+}
+
+/* Slick bounce glow lift effect on avatar hovering slots checking metrics */
+.navbar-profile-avatar-bubble:hover {
+  transform: scale(1.06);
+  box-shadow: 0 6px 15px rgba(255, 56, 56, 0.4);
+  border-color: #ffffff;
+}
+
+/* Mobile responsive alignment override parameter inside navbar query block */
+@media (max-width: 768px) {
+  .navbar-profile-avatar-bubble {
+    width: 36px;
+    height: 36px;
+    font-size: 0.82rem;
+  }
+}

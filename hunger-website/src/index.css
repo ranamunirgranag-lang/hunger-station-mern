@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #111111;
+  color: #ffffff;
+  min-height: 100vh;
+  overflow-x: hidden; /* Taake mobile par right-side scroll ka issue na aaye */
+}

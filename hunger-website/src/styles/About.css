@@ -1,0 +1,189 @@
+/* --- General Page Reset (Gourmet Dark Vibe Restored) --- */
+.about-container {
+  width: 100%;
+  background-color: #111111; /* Vapas premium royal black set kar diya */
+  overflow-x: hidden;
+}
+
+/* --- Section 1: About Main Header (The White Screen Shade Layer) --- */
+.about-hero {
+  position: relative;
+  background: url('https://unsplash.com') no-repeat center center/cover;
+  padding: 10rem 5% 8rem 5%;
+  text-align: center;
+  min-height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* THE MAGIC: Oper se haseen white and red shade niche dark area me dhalay ga */
+.about-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 56, 56, 0.05) 40%, #111111 100%);
+  z-index: 1;
+}
+
+.about-hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.about-tag {
+  color: #ff3838;
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.about-hero-content h1 {
+  font-size: 3.2rem;
+  font-weight: 900;
+  color: #ffffff;
+  margin-top: 0.5rem;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+}
+
+.about-underline {
+  width: 50px;
+  height: 3px;
+  background: #ff3838;
+  margin: 0.8rem auto 0 auto;
+  border-radius: 10px;
+}
+
+/* --- Section 2: Split Columns Grid --- */
+.about-split-section {
+  display: flex;
+  width: 100%;
+  min-height: 65vh;
+  padding: 6rem 8%;
+  align-items: center;
+  gap: 5rem;
+  background: radial-gradient(circle at 10% 20%, rgba(255, 56, 56, 0.06) 0%, transparent 40%);
+}
+
+.about-text-panel {
+  flex: 1;
+}
+
+.panel-tag {
+  color: #ff3838;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.about-text-panel h2 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #ffffff;
+  line-height: 1.25;
+  margin: 0.6rem 0 1.5rem 0;
+  letter-spacing: -0.5px;
+}
+
+.panel-pitch {
+  color: #dddddd;
+  font-size: 1.05rem;
+  line-height: 1.75;
+  margin-bottom: 1.2rem;
+}
+
+.panel-sub-desc {
+  color: #999999;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.about-image-panel {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-graphic-img {
+  width: 100%;
+  max-width: 480px;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 24px;
+  border: 1.5px solid rgba(255, 255, 255, 0.15); /* Light frame overlay instead of bright lines */
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.5);
+  transition: all 0.4s ease;
+}
+
+.about-graphic-img:hover {
+  transform: scale(1.02);
+  border-color: #ff3838;
+}
+
+/* --- Section 3: Metrics Row --- */
+.metrics-section {
+  padding: 0 8% 8rem 8%;
+  background-color: #111111;
+}
+
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 3rem;
+}
+
+/* Semi-Transparent Luxury Dark Cards */
+.metric-card {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.03);
+  padding: 3.5rem 2rem;
+  border-radius: 20px;
+  text-align: center;
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.metric-card h3 {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #ffffff;
+  margin-bottom: 0.2rem;
+}
+
+.metric-card h5 {
+  font-size: 1.1rem;
+  color: #ff3838;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.metric-card p {
+  color: #888888;
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+
+.highlighted-metric {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(255, 188, 0, 0.2);
+}
+
+.metric-card:hover {
+  transform: translateY(-8px);
+  border-color: #ff3838;
+  box-shadow: 0 15px 35px rgba(255, 56, 56, 0.15);
+}
+
+@media (max-width: 992px) {
+  .about-split-section { flex-direction: column; gap: 3rem; padding: 4rem 5%; text-align: center; }
+  .about-hero h1 { font-size: 2.4rem; }
+  .about-text-panel h2 { font-size: 2rem; }
+  .about-graphic-img { height: 300px; }
+  .metrics-section { padding: 0 5% 6rem 5%; }
+}
